@@ -15,3 +15,9 @@ Thumbs.db
 
 # PHPStorm (and other IntelliJ Idea IDEs)
 .idea
+
+# Sublime config files
+*.sublime-workspace
+
+# Sass
+.sass-cache
