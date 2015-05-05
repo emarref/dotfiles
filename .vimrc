@@ -10,6 +10,8 @@ Plugin 'gmarik/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
+Plugin 'edkolev/promptline.vim'
 Plugin 'fatih/vim-go'
 Plugin 'joonty/vdebug'
 Plugin 'kien/ctrlp.vim'
@@ -40,6 +42,9 @@ map <C-n> :NERDTreeToggle<CR>
 syntax on
 set background=dark
 colorscheme solarized
+let g:airline_theme='solarized'
+let g:promptline_theme = 'solarized'
+let g:promptline_preset = 'full'
 " Enable line numbers
 set number
 
@@ -106,6 +111,7 @@ set shortmess=atI
 set showmode
 " Show the filename in the window titlebar
 set title
+let &titleold=getcwd()
 " Show the (partial) command as it’s being typed
 set showcmd
 " Start scrolling three lines before the horizontal window border
