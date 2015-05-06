@@ -135,3 +135,7 @@ noremap <leader>W :w !sudo tee % > /dev/null<CR>
 autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 " Treat .md files as Markdown
 autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+
+" Go configuration
+" Allow auto import
+let g:go_fmt_command = "goimports"
