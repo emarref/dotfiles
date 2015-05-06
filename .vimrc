@@ -32,7 +32,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " Tabs
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 " Trim trailing whitespace on save, using the better whitespace plugin
 autocmd FileType * autocmd BufWritePre <buffer> StripWhitespace
 
@@ -139,3 +139,4 @@ autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 " Go configuration
 " Allow auto import
 let g:go_fmt_command = "goimports"
+autocmd FileType go set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
