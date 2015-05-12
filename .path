@@ -1,0 +1,6 @@
+# E.g. export PATH="$HOME/utils:$PATH"
+export PATH="$GOPATH/bin:$PATH";
+
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH";
+
