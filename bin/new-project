@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ROOT="~/Freelance"
+ROOT=~/Freelance
 CLIENT_ROOT="$ROOT/Clients"
 MANAGEMENT_DIR_NAME="Management"
 PROJECTS_DIR_NAME="Projects"
