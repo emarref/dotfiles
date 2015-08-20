@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+CLIENT_ROOT=~/Clients
+MANAGEMENT_DIR_NAME="Management"
+PROJECTS_DIR_NAME="Projects"
+DEVELOPMENT_DIR_NAME="Development"
+SHARED_DIR_NAME="Shared"
+
+CLIENT=$1
+PROJECT=$2
+
+if [ -z "$CLIENT" ] || [ -z "$PROJECT" ];
+then
+    echo "Please specify the client and project"
+    exit 1;
+fi
+
+CLIENT_ROOT_DIR="$CLIENT_ROOT/$CLIENT"
+CLIENT_MANAGEMENT_DIR="$CLIENT_ROOT_DIR/$MANAGEMENT_DIR_NAME"
+CLIENT_PROJECT_DIR="$CLIENT_ROOT_DIR/$PROJECTS_DIR_NAME"
+CLIENT_SHARED_DIR="$CLIENT_ROOT_DIR/$SHARED_DIR_NAME"
+
+PROJECT_ROOT_DIR="$CLIENT_PROJECT_DIR/$PROJECT"
+PROJECT_MANAGEMENT_DIR="$PROJECT_ROOT_DIR/$MANAGEMENT_DIR_NAME"
+PROJECT_DEVELOPMENT_DIR="$PROJECT_ROOT_DIR/$DEVELOPMENT_DIR_NAME"
+PROJECT_SHARED_DIR="$PROJECT_ROOT_DIR/$SHARED_DIR_NAME"
+
+function mkdir_if_not {
+    local NEW_DIR="$1"
+    if [ ! -d "$NEW_DIR" ]; then
+        mkdir -p "$NEW_DIR"
+        echo 0
+    else
+        echo 1
+    fi
+}
+
+NEW_CLIENT=$(mkdir_if_not "$CLIENT_ROOT_DIR")
+mkdir_if_not "$CLIENT_MANAGEMENT_DIR" > /dev/null
+mkdir_if_not "$CLIENT_SHARED_DIR" > /dev/null
+
+NEW_PROJECT=$(mkdir_if_not "$PROJECT_ROOT_DIR")
+mkdir_if_not "$PROJECT_MANAGEMENT_DIR" > /dev/null
+mkdir_if_not "$PROJECT_DEVELOPMENT_DIR" > /dev/null
+mkdir_if_not "$PROJECT_SHARED_DIR" > /dev/null
+
+if [ "$NEW_CLIENT" == 0 ]; then
+    echo "Created new client '$CLIENT' and project '$PROJECT'."
+    tree "$CLIENT_ROOT_DIR"
+else
+    if [ "$NEW_PROJECT" == 0 ]; then
+        echo "Created new project '$PROJECT' for existing client '$CLIENT'."
+        tree "$PROJECT_ROOT_DIR"
+    else
+        echo "Project '$PROJECT' already exists for client '$CLIENT'."
+    fi
+fi
+
+exit 0
