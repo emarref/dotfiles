@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+curl -sD - "$1" -o /dev/null
