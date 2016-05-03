@@ -28,7 +28,3 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications";
 GOVERSION=$(brew list go | head -n 1 | cut -d '/' -f 6)
 export GOROOT=$(brew --prefix)/Cellar/go/$GOVERSION/libexec
 export GOPATH=/Users/emarref/Projects/go
-
-# Configure Boot2Docker
-export DOCKER_HOST=tcp://10.10.10.7:4243
-
