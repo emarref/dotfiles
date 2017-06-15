@@ -27,4 +27,4 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications";
 # Configure Go programming language
 GOVERSION=$(brew list go | head -n 1 | cut -d '/' -f 6)
 export GOROOT=$(brew --prefix)/Cellar/go/$GOVERSION/libexec
-export GOPATH=/Users/emarref/Projects/go
+export GOPATH=/Users/emarref/Code
