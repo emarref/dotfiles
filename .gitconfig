@@ -1,0 +1,23 @@
+[commit]
+	gpgsign = true
+[user]
+	signingkey = A2F61A933D198444
+	email = emarref@gmail.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	ic = commit
+	st = status
+	wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
+
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = /Users/emarref/.gitignore
+[push]
+	default = current
+[includeIf "gitdir:~/Projects/komodo1/"]
+	path = "~/Projects/komodo1/.gitconfig"
+[includeIf "gitdir:~/Projects/komodo-wellbeing/"]
+	path = "~/Projects/komodo-wellbeing/.gitconfig"
