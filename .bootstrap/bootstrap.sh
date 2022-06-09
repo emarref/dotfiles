@@ -3,7 +3,6 @@ TAPS=(
 )
 
 UTILS=(
-    curl
     git
     jq
     kubernetes-cli
