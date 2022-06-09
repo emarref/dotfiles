@@ -25,6 +25,7 @@ CASKS=(
     mimestream
     slack
     spotify
+    spotmenu
     visual-studio-code
     whatsapp
 )
