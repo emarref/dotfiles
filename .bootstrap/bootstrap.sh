@@ -21,6 +21,7 @@ CASKS=(
     google-chrome
     gpg-suite
     intellij-idea
+    meetingbar
     mimestream
     slack
     spotify
