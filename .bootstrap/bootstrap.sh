@@ -25,6 +25,7 @@ CASKS=(
     slack
     spotify
     visual-studio-code
+    whatsapp
 )
 
 echo "Configuring macOS preferences"
