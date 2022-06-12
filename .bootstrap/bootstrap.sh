@@ -17,6 +17,7 @@ FONTS=(
 CASKS=(
     1password
     docker
+    figma
     firefox
     google-chrome
     gpg-suite
@@ -27,7 +28,9 @@ CASKS=(
     spotify
     spotmenu
     visual-studio-code
+    vivaldi
     whatsapp
+    zoom
 )
 
 echo "Configuring macOS preferences"
