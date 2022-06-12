@@ -5,6 +5,7 @@ TAPS=(
 UTILS=(
     git
     jq
+    k9s
     kubernetes-cli
     starship
     vim
