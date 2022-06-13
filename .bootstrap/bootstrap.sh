@@ -25,8 +25,8 @@ CASKS=(
     intellij-idea
     meetingbar
     mimestream
+    music-bar
     slack
-    spotmenu
     visual-studio-code
     vivaldi
     whatsapp
