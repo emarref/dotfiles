@@ -26,7 +26,6 @@ CASKS=(
     meetingbar
     mimestream
     slack
-    spotify
     spotmenu
     visual-studio-code
     vivaldi
