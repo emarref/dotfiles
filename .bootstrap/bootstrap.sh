@@ -5,6 +5,7 @@ TAPS=(
 UTILS=(
     colima
     docker
+    docker-compose
     git
     jq
     k9s
@@ -47,3 +48,7 @@ brew tap $TAPS
 brew install $UTILS
 brew install $FONTS
 brew install --cask $CASKS
+
+echo "Configuring docker compose command"
+mkdir -p ~/.docker/cli-plugins
+ln -sfn /usr/local/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose
