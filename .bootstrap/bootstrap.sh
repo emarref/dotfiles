@@ -3,6 +3,8 @@ TAPS=(
 )
 
 UTILS=(
+    colima
+    docker
     git
     jq
     k9s
@@ -17,7 +19,6 @@ FONTS=(
 
 CASKS=(
     1password
-    docker
     figma
     firefox
     google-chrome
