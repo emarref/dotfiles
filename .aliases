@@ -1,2 +1,2 @@
 alias df='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias drun='docker-compose run --rm'
+alias drun='docker compose run --rm'
