@@ -17,6 +17,7 @@
 	excludesfile = /Users/emarref/.gitignore
 [push]
 	default = current
+	autoSetupRemote = true
 [includeIf "gitdir:~/Projects/komodo1/"]
 	path = "~/Projects/komodo1/.gitconfig"
 [includeIf "gitdir:~/Projects/komodo-wellbeing/"]
