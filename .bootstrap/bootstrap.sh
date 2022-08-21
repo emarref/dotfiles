@@ -11,6 +11,7 @@ UTILS=(
     k9s
     kubernetes-cli
     starship
+    tmux
     vim
 )
 
