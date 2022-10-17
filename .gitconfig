@@ -10,7 +10,6 @@
 	ic = commit
 	st = status
 	wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
-
 [init]
 	defaultBranch = main
 [core]
@@ -18,7 +17,5 @@
 [push]
 	default = current
 	autoSetupRemote = true
-[includeIf "gitdir:~/Projects/komodo1/"]
-	path = "~/Projects/komodo1/.gitconfig"
-[includeIf "gitdir:~/Projects/komodo-wellbeing/"]
-	path = "~/Projects/komodo-wellbeing/.gitconfig"
+[includeIf "gitdir:~/Projects/TenXHQ/"]
+    path = "~/Projects/TenXHQ/.gitconfig"
