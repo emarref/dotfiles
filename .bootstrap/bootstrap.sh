@@ -3,6 +3,7 @@ TAPS=(
 )
 
 UTILS=(
+    bat
     colima
     docker
     docker-compose

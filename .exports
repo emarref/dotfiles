@@ -5,3 +5,6 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # Configure kubectl to use the new auth plugin for GKE
 # @see https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
+# Use the bundled Dracula theme in bat
+export BAT_THEME=Dracula
