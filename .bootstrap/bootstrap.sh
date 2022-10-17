@@ -5,6 +5,7 @@ TAPS=(
 UTILS=(
     bat
     colima
+    delta
     docker
     docker-compose
     git
