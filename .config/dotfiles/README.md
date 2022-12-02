@@ -1,13 +1,13 @@
-Clone the repo into `~/.dotfiles`
+Bare clone the repo into `~/.config/dotfiles/.git`
 
 ```
-git clone --bare <git-repo-url> $HOME/.dotfiles
+git clone --bare <git-repo-url> $HOME/.config/dotfiles/.git
 ```
 
 Set up an alias to simplify git commands on your dotfiles. (This is already in `.aliases`)
 
 ```
-alias df='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias df='git --git-dir=$HOME/.config/dotfiles/.git --work-tree=$HOME'
 ```
 
 Check out the code into your home dir
