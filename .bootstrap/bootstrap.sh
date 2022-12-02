@@ -12,6 +12,7 @@ UTILS=(
     jq
     k9s
     kubernetes-cli
+    nvm
     starship
     tmux
     vim
