@@ -4,15 +4,21 @@ TAPS=(
 
 UTILS=(
     bat
+    bottom
     colima
     delta
     docker
     docker-compose
+    fd
+    gdu
     git
     jq
     k9s
     kubernetes-cli
+    lazygit
+    nvim
     nvm
+    ripgrep
     starship
     tmux
     vim
