@@ -62,3 +62,12 @@ brew install --cask $CASKS
 echo "Configuring docker compose command"
 mkdir -p ~/.docker/cli-plugins
 ln -sfn /usr/local/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose
+
+echo "Downloading AstroNvim"
+cd ~/.config/nvim
+git init
+git remote add origin https://github.com/AstroNvim/AstroNvim
+git fetch
+git reset origin/main
+git checkout .
+cd -
