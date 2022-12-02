@@ -14,6 +14,7 @@
 	defaultBranch = main
 [core]
 	excludesfile = /Users/emarref/.gitignore
+	ignorecase = false
 [push]
 	default = current
 	autoSetupRemote = true
