@@ -8,3 +8,5 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # Use the bundled Dracula theme in bat
 export BAT_THEME=Dracula
+export NEXT_TELEMETRY_DISABLED=1
+export STORYBOOK_DISABLE_TELEMETRY=1
