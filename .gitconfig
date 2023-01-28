@@ -22,3 +22,5 @@
     path = "~/.gitconfig-delta"
 [includeIf "gitdir:~/Projects/TenXHQ/"]
     path = "~/Projects/TenXHQ/.gitconfig"
+[pull]
+	rebase = true
