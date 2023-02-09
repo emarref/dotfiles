@@ -20,7 +20,7 @@
 	autoSetupRemote = true
 [include]
     path = "~/.gitconfig-delta"
-[includeIf "gitdir:~/Projects/TenXHQ/"]
-    path = "~/Projects/TenXHQ/.gitconfig"
+[includeIf "gitdir:~/Developer/TenXHQ/"]
+    path = "~/Developer/TenXHQ/.gitconfig"
 [pull]
 	rebase = true
