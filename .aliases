@@ -1,2 +1,3 @@
 alias df='git --git-dir=$HOME/.config/dotfiles/.git --work-tree=$HOME'
+alias lazygitdf='lazygit --git-dir=$HOME/.config/dotfiles/.git --work-tree=$HOME'
 alias drun='docker compose run --rm'
