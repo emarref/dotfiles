@@ -10,7 +10,7 @@ an executable
 
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save.enabled = false
+lvim.format_on_save.enabled = true
 lvim.colorscheme = "dracula"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -163,9 +163,25 @@ lvim.builtin.treesitter.highlight.enable = true
 --   },
 -- }
 
+
+-- FROM https://dev.to/datner/configuring-eslint-and-prettier-in-lunarvim-bonus-tailwindcss-2211
+local linters = require "lvim.lsp.null-ls.linters"
+linters.setup {
+  { command = "eslint", filetypes = { "typescript", "typescriptreact" } }
+}
+
+local formatters = require "lvim.lsp.null-ls.formatters"
+formatters.setup {
+  {
+    command = "prettier",
+    filetypes = { "typescript", "typescriptreact" },
+  },
+}
+
+
 -- Additional Plugins
 lvim.plugins = {
-  {"dracula/vim"},
+  { "dracula/vim" },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
